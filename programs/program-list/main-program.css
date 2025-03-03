@@ -1,0 +1,250 @@
+/* ============================================= FONTS ============================================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+/* ====================== MAIN ROOT ====================== */
+
+:root {
+  --fMain: "Exo 2", serif;
+  --fSub: "Oswald", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ============================================= HEADER ============================================= */
+header {
+  padding: 5% 0;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-family: var(--fMain);
+  font-size: 4rem;
+  margin-bottom: 5%;
+  background-color: rgba(127, 240, 89, 1);
+  text-align: center;
+  padding: 1% 0;
+  border-radius: 50px;
+}
+
+header span {
+  font-family: var(--fMain);
+  font-size: 2.2rem;
+  margin-right: 0.5%;
+  font-weight: 700;
+  position: relative;
+}
+
+header span::before {
+  content: "";
+  position: absolute;
+  bottom: 10%;
+  left: -10px;
+  width: 2px;
+  background-color: rgba(127, 240, 89, 1);
+  height: 70%;
+}
+
+header h2 {
+  font-family: var(--fSub);
+  font-size: 1.6rem;
+  margin-bottom: 1%;
+  font-weight: 300;
+  width: 45%;
+}
+
+ul li {
+  font-family: var(--fSub);
+  font-size: 1.4rem;
+  margin-bottom: 1%;
+  font-weight: 300;
+  width: 45%;
+  margin-left: 5%;
+  list-style: none;
+  position: relative;
+}
+
+ul li::before {
+  content: "•";
+  position: absolute;
+  left: -15px;
+  top: -5px;
+  font-size: 1.9rem;
+  margin-right: 8px;
+  display: inline-block;
+  color: rgba(127, 240, 89, 1);
+}
+
+/* ====================== IMAGE ====================== */
+header img {
+  top: 38%;
+  right: 12%;
+  position: absolute;
+  height: 60cap;
+  border-radius: 20px;
+}
+
+/* ============================================= CONTROLS ============================================= */
+
+.body_controls {
+  padding: 5% 0 7%;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+.prev {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0px;
+  cursor: default;
+  font-family: var(--fMain);
+  font-size: 1.5rem;
+  height: 50px;
+  color: transparent;
+  user-select: none;
+}
+.prev_icon {
+  position: relative;
+  width: 50px;
+  height: 100%;
+}
+.p1 {
+  width: 20px;
+  height: 2px;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+}
+.p2 {
+  width: 15px;
+  height: 2px;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transition: all 0.5s ease;
+}
+.p3 {
+  width: 15px;
+  height: 2px;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transition: all 0.5s ease;
+}
+
+.prev:hover .p2 {
+  transform: rotate(-45deg);
+  top: 39%;
+  left: 28%;
+  transition: all 0.5s ease;
+}
+.prev:hover .p3 {
+  transform: rotate(45deg);
+  top: 61%;
+  left: 28%;
+  transition: all 0.5s ease;
+}
+
+/* center */
+.center_icon {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20%;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.c1 {
+  height: 15px;
+  width: 15px;
+  border: 2px solid black;
+}
+.c2 {
+  height: 15px;
+  width: 15px;
+  border: 2px solid black;
+}
+.c3 {
+  height: 15px;
+  width: 15px;
+  border: 2px solid black;
+}
+.c4 {
+  height: 15px;
+  width: 15px;
+  border: 2px solid black;
+}
+
+.center_icon:hover {
+  transform: scale(0.98);
+  gap: 15%;
+  transition: all 0.5s ease;
+}
+
+/* next */
+.next {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0px;
+  cursor: pointer;
+  font-family: var(--fMain);
+  font-size: 1.5rem;
+  height: 50px;
+}
+.next_icon {
+  position: relative;
+  width: 50px;
+  height: 100%;
+}
+.n1 {
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 30%;
+}
+.n2 {
+  width: 15px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transition: all 0.5s ease;
+}
+.n3 {
+  width: 15px;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transition: all 0.5s ease;
+}
+
+.next:hover .n2 {
+  transform: rotate(45deg);
+  top: 39%;
+  left: 45%;
+  transition: all 0.5s ease;
+}
+.next:hover .n3 {
+  transform: rotate(-45deg);
+  top: 61%;
+  left: 45%;
+  transition: all 0.5s ease;
+}

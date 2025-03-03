@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gia Giovani - Personal Trainer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="navigation/nav.css" />
+
+    <style>
+      nav .hyperlinks a:nth-child(1):before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        border-radius: 50px;
+        left: 0;
+        bottom: -5px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ==================================== NAV ==================================== -->
+    <div id="nav-container"></div>
+    <!-- ==================================== HEADER ==================================== -->
+
+    <header>
+      <img draggable="false" src="images/header-photo.jpg" alt="Gym photo" />
+      <div class="header_text_wrapper">
+        <h1>Transform Your Body, Elevate Your Life</h1>
+        <p>
+          Customized fitness coaching to help you achieve your goals—whether it's fat loss, muscle gain, or improved
+          athletic performance.
+        </p>
+        <div class="button_wrapper">
+          <a href="/contact/contact.html"><button id="get-started">Get Started Now</button></a>
+          <a href="/classes/classes.html"><button id="explore-classes">Explore Classes</button></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- ==================================== CLASSES ==================================== -->
+
+    <section class="calsses">
+      <div class="classes_text_wrapper">
+        <p>Top Picks</p>
+        <h1>Featured Workouts</h1>
+        <p>Choose from a variety of classes to find the perfect fit for your fitness goals and preferences.</p>
+        <a href="/classes/classes.html"><button>View All Classes</button></a>
+      </div>
+
+      <div class="classes_photos">
+        <article>
+          <img draggable="false" src="images/f-w-photo1.jpg" alt="image of girl doing strengt training" />
+          <h2>Strength</h2>
+        </article>
+
+        <article>
+          <img draggable="false" src="images/f-w-photo2.jpg" alt="image of girl doing strech training" />
+          <h2>Strech</h2>
+        </article>
+
+        <article>
+          <img draggable="false" src="images/f-w-photo3.jpg" alt="image of girl doing yoga" />
+          <h2>Yoga</h2>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==================================== ONLINE APP ==================================== -->
+
+    <section class="online-app">
+      <div class="image_mockup">
+        <img draggable="false" src="images/Mockup-photo.png" alt="Mockup image of our app" />
+      </div>
+
+      <div class="onilne_app_text_wrapper">
+        <p>Fittnes Now</p>
+        <h1>Train Anywhere, Anytime</h1>
+        <p>
+          With our app , you can access a variety of workouts and classes from the comfort of your own home.
+          <br /><br class="br2" />
+          Start your fitness journey today!
+        </p>
+        <a href="/contact/contact.html"><button>Join Online</button></a>
+      </div>
+    </section>
+
+    <!-- ==================================== WHY CHOOSE US ==================================== -->
+
+    <section class="why-us">
+      <h1>Why Choose Us?</h1>
+      <p>
+        We go above and beyond to ensure that our members receive the best possible experience. With us you will see
+        results and feel the difference immediately.
+      </p>
+
+      <div class="card_wrapper">
+        <div class="card card1"><h2>Flexibility</h2></div>
+        <div class="card card2"><h2>Wellness</h2></div>
+        <div class="card card3"><h2>Community</h2></div>
+        <div class="card card4"><h2>Results</h2></div>
+      </div>
+    </section>
+
+    <!-- ==================================== COACH ==================================== -->
+
+    <section class="coach">
+      <div class="coach_text_wrapper">
+        <a href="#">Gia Giovani</a>
+        <h1>Meet Your Coach</h1>
+        <p>
+          With years of experience in the fitness industry, I'm dedicated to help you achieve your fitness goals. My
+          passion is to help you feel confident and empowered through fitness.
+          <br /><br />
+          It's time to take control of your health and fitness. Let's get started today!
+        </p>
+      </div>
+
+      <div class="coach_image_wrapper">
+        <img draggable="false" src="images/my-photo.jpg" alt="Photo of Gia Giovani" />
+      </div>
+    </section>
+
+    <!-- ==================================== FOOTER ==================================== -->
+    <div id="footer-container"></div>
+
+    <script src="script.js"></script>
+    <script src="getNav.js"></script>
+  </body>
+</html>

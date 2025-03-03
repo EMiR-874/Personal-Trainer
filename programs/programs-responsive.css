@@ -1,0 +1,98 @@
+@media (max-width: 1024px) {
+  section {
+    padding-top: 5%;
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding-top: 5%;
+    width: 65%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  section {
+    padding-top: 5%;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  header h1 {
+    font-size: 3.5rem;
+    width: 90%;
+  }
+  header p {
+    font-size: 1.3rem;
+    width: 70%;
+  }
+  header button {
+    font-size: 1.5rem;
+    padding: 15px 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  article {
+    width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 425px) {
+  article {
+    width: 350px;
+    margin-left: 7%;
+  }
+  section {
+    width: 100%;
+  }
+
+  header h1 {
+    font-size: 3rem;
+    padding-bottom: 10%;
+  }
+  header p {
+    width: 90%;
+    padding-bottom: 10%;
+  }
+  header button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 375px) {
+  article {
+    width: 350px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  article {
+    width: 300px;
+    margin-left: 2%;
+  }
+  header h1 {
+    font-size: 2.5rem;
+  }
+  header p {
+    font-size: 1.2rem;
+  }
+  header button {
+    padding: 10px 25px;
+    font-size: 1.3rem;
+  }
+  .b_image,
+  .f_image,
+  .a_image,
+  .m_image,
+  .o_image,
+  .p_image {
+    height: 240px;
+  }
+}

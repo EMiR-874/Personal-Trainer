@@ -1,0 +1,69 @@
+@media (max-width: 1440px) {
+  section {
+    width: 90%;
+  }
+  article h1 {
+    font-size: 2rem;
+  }
+  article p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .icon_sign_wrapper {
+    display: none;
+  }
+
+  header {
+    margin-top: 7%;
+    margin-bottom: 20%;
+  }
+
+  section {
+    width: 95%;
+  }
+  article h1 {
+    font-size: 1.8rem;
+  }
+  article p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .icon_sign_wrapper {
+    display: none;
+  }
+
+  header {
+    margin-top: 7%;
+    margin-bottom: 28%;
+  }
+
+  section {
+    width: 95%;
+  }
+  article h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5%;
+  }
+  article p {
+    font-size: 1.1rem;
+  }
+  article {
+    margin-bottom: 5%;
+  }
+}
+
+@media (max-width: 375px) {
+  header {
+    margin-top: 10%;
+    margin-bottom: 38%;
+  }
+
+  article h1 {
+    font-size: 1.4rem;
+    margin-bottom: 3.5%;
+  }
+}

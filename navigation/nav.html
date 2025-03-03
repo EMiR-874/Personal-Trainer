@@ -1,0 +1,39 @@
+<nav>
+  <div class="logo">
+    <a href="../index.html">Gia Giovani</a>
+    <div class="dropdown_wrapper">
+      <div class="dropdown_box">
+        <div class="line1"></div>
+        <div class="line2"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hyperlinks">
+    <a href="/index.html">Home</a>
+    <a href="/classes/classes.html">Classes</a>
+    <a href="/programs/programs.html">Programs</a>
+    <a href="/coaches/coaches.html">Coaches</a>
+    <a href="/contact/contact.html">Contact</a>
+  </div>
+
+  <div class="button_wrapper">
+    <a href="/contact/contact.html"><button>Get Started</button></a>
+  </div>
+</nav>
+
+<script>
+  function setupDropdown() {
+    document.querySelector(" .dropdown_box").addEventListener("click", function () {
+      this.classList.toggle("clicked");
+
+      document.querySelectorAll("body > *:not(#nav-container):not(nav)").forEach((element) => {
+        element.classList.toggle("hidden");
+      });
+
+      document.querySelector(".hyperlinks").classList.toggle("show");
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", setupDropdown);
+</script>

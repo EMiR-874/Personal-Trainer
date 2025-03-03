@@ -1,0 +1,493 @@
+/* ============================================= FONTS ============================================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+/* ====================== MAIN ROOT ====================== */
+
+:root {
+  --fMain: "Exo 2", serif;
+  --fSub: "Oswald", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* ============================================= STARTING PAGE ============================================= */
+/* ====================== HEADER ====================== */
+
+header {
+  width: 97%;
+  margin: 0 auto;
+  background: rgb(127, 240, 89);
+  background: linear-gradient(180deg, rgba(127, 240, 89, 1) 0%, rgba(173, 241, 150, 1) 35%, rgba(196, 241, 181, 1) 80%);
+  border-radius: 50px;
+  padding: 5% 0;
+  position: relative;
+}
+
+.header_text_wrapper {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  padding-left: 5%;
+  position: relative;
+  z-index: 1;
+}
+
+header h1 {
+  font-family: var(--fMain);
+  font-size: 4.5rem;
+}
+
+header p {
+  font-family: var(--fSub);
+  font-size: 1.7rem;
+}
+
+header button {
+  font-family: var(--fMain);
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 1.7rem;
+  padding: 25px 45px;
+  margin-right: 2%;
+}
+
+#get-started {
+  color: white;
+  background-color: #000;
+  transition: all 0.5s ease;
+}
+
+#explore-classes {
+  background-color: transparent;
+  border: 1px solid black;
+  transition: all 0.5s ease;
+}
+
+#get-started:hover {
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+}
+
+#explore-classes:hover {
+  background-color: #000;
+  border: none;
+  color: white;
+}
+
+/* ====================== HEADER IMAGE ====================== */
+header img {
+  position: absolute;
+  top: 13%;
+  left: 65%;
+  height: 70cap;
+  border-radius: 25px;
+}
+
+/* ============================================= FEATURED CLASSES ============================================= */
+/* ====================== TEXT WRAPPER ====================== */
+.calsses {
+  padding-top: 10%;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.classes_text_wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 30%;
+}
+
+.classes_text_wrapper p {
+  font-family: var(--fSub);
+  font-size: 1.7rem;
+  color: rgb(68, 67, 67);
+}
+
+.classes_text_wrapper p:first-of-type {
+  font-size: 1.8rem;
+}
+
+.classes_text_wrapper h1 {
+  font-family: var(--fMain);
+  font-size: 5rem;
+}
+
+.classes_text_wrapper button {
+  font-family: var(--fMain);
+  font-weight: bold;
+  border-radius: 50px;
+  background-color: rgba(127, 240, 89, 1);
+  border: 1px solid rgba(127, 240, 89, 1);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 1.4rem;
+  padding: 25px 0;
+  width: 50%;
+}
+
+.classes_text_wrapper button:hover {
+  background-color: rgba(173, 241, 150, 1);
+}
+
+/* ====================== ARTICLE ====================== */
+.classes_photos {
+  display: inline-flex;
+  align-items: end;
+  gap: 50px;
+}
+
+article:nth-child(2) {
+  align-self: flex-start;
+}
+
+article {
+  position: relative;
+}
+
+article h2 {
+  position: absolute;
+  transform: translateY(-100%);
+  top: 95%;
+  left: 8%;
+  color: white;
+  font-family: var(--fMain);
+  text-transform: uppercase;
+}
+
+article img {
+  height: 45cap;
+  position: relative;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 0px 41px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 41px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 41px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* ============================================= ONLINE APP ============================================= */
+/* ====================== TEXT WRAPPER ====================== */
+.online-app {
+  padding-top: 10%;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.onilne_app_text_wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 30%;
+}
+
+.onilne_app_text_wrapper p {
+  font-family: var(--fSub);
+  font-size: 1.7rem;
+  color: rgb(68, 67, 67);
+}
+
+.onilne_app_text_wrapper p:first-of-type {
+  font-size: 1.8rem;
+}
+
+.onilne_app_text_wrapper h1 {
+  font-family: var(--fMain);
+  font-size: 5rem;
+}
+
+.onilne_app_text_wrapper button {
+  font-family: var(--fMain);
+  font-weight: bold;
+  border-radius: 50px;
+  background-color: rgba(127, 240, 89, 1);
+  border: 1px solid rgba(127, 240, 89, 1);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 1.4rem;
+  padding: 25px 0;
+  width: 50%;
+}
+
+.onilne_app_text_wrapper button:hover {
+  background-color: rgba(173, 241, 150, 1);
+}
+
+/* ====================== MOCKUP IMAGE ====================== */
+.image_mockup {
+  display: inline-flex;
+  align-items: center;
+}
+.image_mockup img {
+  height: 55cap;
+}
+/* ============================================= WHY TO CHOOSE US ============================================= */
+/* ====================== WHY TO CHOOSE US TEXT WRAPPER ====================== */
+.why-us {
+  text-align: center;
+}
+
+.why-us h1 {
+  font-family: var(--fMain);
+  font-size: 5rem;
+  padding: 10% 0 2%;
+}
+
+.why-us p {
+  font-family: var(--fSub);
+  font-size: 1.8rem;
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* ====================== WHY TO CHOOSE US CARD WRAPPER ====================== */
+.card_wrapper {
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  cursor: default;
+}
+
+.card_wrapper h2 {
+  font-family: var(--fMain);
+  font-size: 2rem;
+  position: relative;
+}
+
+.card_wrapper h2::after {
+  content: "";
+  position: absolute;
+  border-bottom: 3px solid rgb(127, 240, 89);
+  border-radius: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  width: 40%;
+}
+
+.card {
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 40px 30px;
+  transition: all 0.3s ease;
+}
+
+.card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover {
+  transform: translateY(-5px);
+}
+
+/* ============================================= COACH ============================================= */
+/* ====================== COACH TEXT WRAPPER ====================== */
+
+.coach {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 10%;
+  padding-bottom: 10%;
+}
+
+.coach_text_wrapper {
+  width: 45%;
+}
+.coach p,
+.coach a {
+  font-family: var(--fSub);
+  font-size: 1.7rem;
+  color: rgb(68, 67, 67);
+}
+
+.coach a {
+  font-size: 1.8rem;
+  position: relative;
+  width: fit-content;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.coach a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 80%;
+  border-bottom: 2px solid rgb(127, 240, 89);
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.coach a:hover:after {
+  width: 100%;
+}
+
+.coach h1 {
+  font-family: var(--fMain);
+  font-size: 5rem;
+  padding: 30px 0;
+}
+
+/* ====================== COACH IMAGE ====================== */
+.coach_image_wrapper {
+  margin-right: 5%;
+  position: relative;
+  border-radius: 50%;
+}
+.coach img {
+  border-radius: 50%;
+  height: 40cap;
+  position: relative;
+}
+.coach_image_wrapper:after {
+  content: "";
+  position: absolute;
+  transform: translateX(-50%);
+  left: 80%;
+  top: 0;
+  height: 25cap;
+  width: 25cap;
+  border-radius: 50%;
+  background-color: rgba(173, 241, 150, 1);
+  z-index: -1;
+  transition: all 0.7s ease;
+}
+.coach_image_wrapper::before {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 85%;
+  top: 70%;
+  height: 30cap;
+  width: 30cap;
+  border-radius: 50%;
+  background-color: rgba(196, 241, 181, 1);
+  z-index: -1;
+  transition: all 0.7s ease;
+}
+
+.coach_image_wrapper:hover:after,
+.coach_image_wrapper:hover:before {
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+}
+
+/* ============================================= FOOTER ============================================= */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+/* ====================== TEXT WRAPPER ====================== */
+footer .footer_text_wrapper:before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  border-top: 2px solid rgb(127, 240, 89);
+  border-radius: 50px;
+}
+
+footer .footer_text_wrapper {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+  position: relative;
+}
+
+footer .footer_text_wrapper h1 {
+  font-family: var(--fMain);
+  font-size: 2.5rem;
+}
+
+footer .footer_text_wrapper a {
+  text-decoration: none;
+  font-family: var(--fSub);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgb(145, 144, 144);
+  transition: all 0.7s ease;
+  position: relative;
+  width: fit-content;
+}
+
+footer .footer_text_wrapper a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  border-bottom: 2px solid rgba(127, 240, 89, 1);
+  transition: all 0.7s ease;
+}
+
+footer .footer_text_wrapper a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+footer .footer_text_wrapper a:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.f2,
+.f3,
+.f4 {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.d-button {
+  width: 100px;
+  height: 33px;
+}
+
+/* ====================== FOOTER COPYRIGHT ====================== */
+.footer_copyright {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2%;
+}
+
+.footer_copyright p {
+  font-family: var(--fSub);
+  font-size: 1.2rem;
+}
+
+.footer_copyright .social_links {
+  display: inline-flex;
+  gap: 20px;
+}
+
+.footer_copyright img {
+  height: 40px;
+}

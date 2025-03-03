@@ -1,0 +1,157 @@
+/* ============================================= STARTING PAGE ============================================= */
+/* ====================== HEADER ====================== */
+
+header {
+  width: 97%;
+  margin: 0 auto;
+  background: rgb(127, 240, 89);
+  background: linear-gradient(180deg, rgba(127, 240, 89, 1) 0%, rgba(173, 241, 150, 1) 35%, rgba(196, 241, 181, 1) 80%);
+  border-radius: 50px;
+  padding: 5% 0;
+  position: relative;
+  text-align: center;
+}
+
+header h1 {
+  font-family: var(--fMain);
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 5%;
+}
+
+header p {
+  font-family: var(--fSub);
+  font-size: 1.5rem;
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 5%;
+}
+
+header button {
+  font-family: var(--fMain);
+  border: 2px solid black;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1.7rem;
+  padding: 25px 45px;
+  background-color: transparent;
+  margin-right: 2%;
+  transition: all 0.4s ease;
+}
+
+#get-started:hover {
+  background-color: black;
+  color: white;
+}
+
+/* ====================== ARTICLE ====================== */
+.s_image,
+.c_image,
+.y_image,
+.h_image,
+.m_image,
+.p_image {
+  width: 100%;
+  height: 260px;
+  position: relative;
+  z-index: 1;
+  border-radius: 30px;
+  transition: border-radius 0.3s ease;
+  cursor: pointer;
+}
+
+.border-change {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.s_image {
+  background: url(images/strenght-photo.jpg) center / cover no-repeat;
+}
+.c_image {
+  background: url(images/cardio-photo.jpg) center / cover no-repeat;
+}
+.y_image {
+  background: url(images/yoga-photo.jpg) center / cover no-repeat;
+}
+.h_image {
+  background: url(images/hiit-photo.jpg) center / cover no-repeat;
+}
+.m_image {
+  background: url(images/mobility-photo.jpg) center / cover no-repeat;
+}
+.p_image {
+  background: url(images/pilates-photo.jpg) top / cover no-repeat;
+}
+
+.s_image h1,
+.c_image h1,
+.y_image h1,
+.h_image h1,
+.m_image h1,
+.p_image h1 {
+  position: absolute;
+  top: 96%;
+  left: 3%;
+  transform: translateY(-100%);
+  color: white;
+  font-family: var(--fMain);
+  text-transform: uppercase;
+  text-shadow: 1px 1px black;
+}
+
+.opened {
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding: 2% 2% 0 2%;
+  transform: translateY(-50px);
+  transition: max-height 0.5s ease-out, opacity 0.5s ease-out, transform 0.5s ease-out;
+  background: rgb(127, 240, 89);
+  background: linear-gradient(180deg, rgba(127, 240, 89, 1) 0%, rgba(173, 241, 150, 1) 35%, rgba(196, 241, 181, 1) 80%);
+
+  color: black;
+  z-index: -1;
+}
+
+.opened.active {
+  max-height: 500px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.opened p {
+  font-family: var(--fMain);
+  font-size: 1.2rem;
+  margin-bottom: 3%;
+}
+
+.opened span {
+  font-family: var(--fSub);
+  font-size: 1.2rem;
+}
+
+article {
+  width: 500px;
+  min-height: 260px;
+  background-color: transparent;
+  margin-bottom: 2%;
+}
+
+article img {
+  position: relative;
+  width: 40cap;
+  -webkit-user-drag: none;
+}
+
+section {
+  padding-top: 5%;
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 3px;
+}

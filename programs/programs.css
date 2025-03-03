@@ -1,0 +1,161 @@
+/* ============================================= STARTING PAGE ============================================= */
+/* ====================== HEADER ====================== */
+
+header {
+  width: 97%;
+  margin: 0 auto;
+  background: rgb(127, 240, 89);
+  background: linear-gradient(180deg, rgba(127, 240, 89, 1) 0%, rgba(173, 241, 150, 1) 35%, rgba(196, 241, 181, 1) 80%);
+  border-radius: 50px;
+  padding: 5% 0;
+  position: relative;
+  text-align: center;
+}
+
+header h1 {
+  font-family: var(--fMain);
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  width: 62%;
+  margin: 0 auto;
+  padding-bottom: 5%;
+}
+
+header p {
+  font-family: var(--fSub);
+  font-size: 1.5rem;
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 5%;
+}
+
+header button {
+  font-family: var(--fMain);
+  border: 2px solid black;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1.7rem;
+  padding: 25px 45px;
+  background-color: transparent;
+  margin-right: 2%;
+  transition: all 0.4s ease;
+}
+
+#get-started:hover {
+  background-color: black;
+  color: white;
+}
+
+/* ====================== ARTICLE ====================== */
+.b_image,
+.f_image,
+.a_image,
+.m_image,
+.o_image,
+.p_image {
+  width: 100%;
+  height: 260px;
+  position: relative;
+  z-index: 1;
+  border-radius: 30px;
+}
+
+.b_image {
+  background: url(images/beginner.jpg) center / cover no-repeat;
+}
+.f_image {
+  background: url(images/fatloss.jpg) center / cover no-repeat;
+}
+.a_image {
+  background: url(images/athletic.jpg) center / cover no-repeat;
+}
+.m_image {
+  background: url(images/musscle.jpg) center / cover no-repeat;
+}
+.o_image {
+  background: url(images/online.jpg) center / cover no-repeat;
+}
+.p_image {
+  background: url(images/pilates.jpg) center / cover no-repeat;
+}
+
+.b_image h1,
+.f_image h1,
+.a_image h1,
+.m_image h1,
+.o_image h1,
+.p_image h1 {
+  position: absolute;
+  top: 88%;
+  left: 4%;
+  transform: translateY(-100%);
+  color: white;
+  font-family: var(--fMain);
+  text-transform: uppercase;
+  text-shadow: 1px 1px black;
+}
+
+.b_image p,
+.f_image p,
+.a_image p,
+.m_image p,
+.o_image p,
+.p_image p {
+  position: absolute;
+  top: 96%;
+  left: 4%;
+  transform: translateY(-100%);
+  color: white;
+  font-family: var(--fMain);
+  text-transform: uppercase;
+  text-shadow: 1px 1px black;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.b_image p::before,
+.f_image p::before,
+.a_image p::before,
+.m_image p::before,
+.o_image p::before,
+.p_image p::before {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid rgba(127, 240, 89, 1);
+  width: 100%;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 0.3s ease;
+}
+
+.b_image p:hover:before,
+.f_image p:hover:before,
+.a_image p:hover:before,
+.m_image p:hover:before,
+.o_image p:hover:before,
+.p_image p:hover:before {
+  width: 0;
+}
+
+article {
+  width: 500px;
+  min-height: 260px;
+  background-color: transparent;
+  margin-bottom: 2%;
+}
+
+article img {
+  position: relative;
+  width: 40cap;
+  -webkit-user-drag: none;
+}
+
+section {
+  padding-top: 5%;
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 3px;
+}

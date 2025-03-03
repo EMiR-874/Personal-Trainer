@@ -1,0 +1,110 @@
+/* ============================================= FONTS ============================================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+/* ====================== MAIN ROOT ====================== */
+
+:root {
+  --fMain: "Exo 2", serif;
+  --fSub: "Oswald", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* ============================================= HEADER ============================================= */
+header {
+  margin-top: 3%;
+  margin-bottom: 7%;
+}
+
+section {
+  width: 80%;
+  margin: 0 auto;
+}
+
+article {
+  margin-bottom: 3%;
+  background-color: rgba(127, 240, 89, 1);
+  padding: 2%;
+  border-radius: 15px;
+}
+
+article h1 {
+  font-family: var(--fMain);
+  font-size: 2.4rem;
+  margin-bottom: 0.5%;
+}
+
+article p {
+  font-family: var(--fSub);
+  font-size: 1.7rem;
+}
+
+.icon_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon_sign_wrapper {
+  min-width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.5s ease;
+  padding: inherit 0 15px;
+}
+
+.c1 {
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background-color: black;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  transition: 0.5s ease;
+}
+
+.c2 {
+  position: absolute;
+  width: 3px;
+  height: 20px;
+  background-color: black;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  transition: 0.5s ease;
+}
+
+.clicked .c1 {
+  left: 10%;
+  transform: rotate(45deg);
+}
+.clicked .c2 {
+  top: 28%;
+  left: 60%;
+  transform: rotate(45deg);
+}
+
+.answer {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.answer.show {
+  opacity: 1;
+}
