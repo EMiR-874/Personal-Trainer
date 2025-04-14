@@ -1,0 +1,148 @@
+/* ============================================= FONTS ============================================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+/* ====================== MAIN ROOT ====================== */
+
+:root {
+  --fMain: "Exo 2", serif;
+  --fSub: "Oswald", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* ============================================= STARTING PAGE ============================================= */
+header {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 10%;
+}
+
+.section-wrapper {
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+  gap: 20%;
+}
+/* ====================== SECTION INPUT ====================== */
+
+.form-list {
+  display: inline-flex;
+  width: 60%;
+}
+.info_list {
+  display: inline-flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+form {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  position: relative;
+}
+.input-container {
+  position: relative;
+}
+
+.input_type {
+  width: 100%;
+  padding: 15px 3% 0;
+  height: 40px;
+  border: none;
+  border-bottom: 2px solid rgb(127, 240, 89);
+  font-size: 1rem;
+  outline: none;
+  resize: none;
+}
+
+.floating-label {
+  position: absolute;
+  left: 3%;
+  top: 70%;
+  transform: translateY(-50%);
+  transition: 0.3s ease;
+  color: gray;
+  pointer-events: none;
+  font-family: var(--fSub);
+}
+
+.input_type:focus + .floating-label,
+.input_type.filled + .floating-label {
+  top: 10px;
+  font-size: 0.9rem;
+  color: black;
+}
+
+.form-list button {
+  font-family: var(--fMain);
+  font-weight: 600;
+  border-radius: 50px;
+  border: 2px solid rgb(127, 240, 89);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 1.7rem;
+  padding: 15px;
+  width: 100%;
+  margin-right: 2%;
+  background-color: rgb(127, 240, 89);
+}
+
+.form-list button:hover {
+  background-color: rgba(173, 241, 150, 1);
+}
+
+/* ====================== INFO LIST ====================== */
+.info_list {
+  margin-top: 1%;
+}
+
+.info_list h1 {
+  font-family: var(--fMain);
+  font-size: 2.8rem;
+  margin-bottom: 1%;
+}
+
+.info_list h1:last-of-type {
+  margin-top: 10%;
+}
+
+.info_list p {
+  font-family: var(--fSub);
+  font-size: 1.3rem;
+}
+
+.info_list p span {
+  font-weight: 420;
+}
+
+.info_list a {
+  text-decoration: none;
+  color: gray;
+}
+
+/* ====================== IFRAME LOCATION ====================== */
+.iframe_location {
+  width: 100%;
+  height: 450px;
+  margin-top: 5%;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  filter: hue-rotate(-45deg), saturate(2.5%);
+}

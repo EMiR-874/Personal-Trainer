@@ -1,0 +1,143 @@
+@media (max-width: 1024px) {
+  section {
+    width: 90%;
+    gap: 30px;
+    margin-bottom: 17%;
+  }
+  section p {
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px) {
+  article img {
+    height: 13cap;
+  }
+  article {
+    width: 150px;
+    height: 150px;
+  }
+  #transparentBg img {
+    height: 15cap;
+  }
+  header {
+    padding: 10% 0;
+  }
+  section {
+    width: 95%;
+    gap: 30px;
+    margin-bottom: 25%;
+  }
+  section p {
+    width: 100%;
+  }
+  section p:nth-child(3) {
+    font-size: 1.3rem;
+  }
+  section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1%;
+  }
+
+  section h2:last-of-type {
+    margin-bottom: 0;
+  }
+  section p:last-of-type {
+    margin-top: -4%;
+    font-size: 1.3rem;
+  }
+  section button {
+    padding: 15px 60px;
+  }
+}
+
+@media (max-width: 500px) {
+  article img {
+    height: 10cap;
+  }
+  article {
+    width: 120px;
+    height: 120px;
+  }
+  #transparentBg img {
+    height: 12cap;
+  }
+}
+
+@media (max-width: 425px) {
+  article img {
+    height: 9cap;
+  }
+  article {
+    width: 110px;
+    height: 110px;
+  }
+  #transparentBg img {
+    height: 11cap;
+  }
+  header {
+    gap: 10px;
+  }
+
+  section {
+    width: 96%;
+  }
+  section h1 {
+    margin: -5% 0;
+  }
+  section p:last-of-type {
+    font-size: 1.25rem;
+  }
+  section li {
+    margin-left: 8%;
+  }
+  section button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  header {
+    padding: 20% 0;
+  }
+
+  section {
+    width: 96%;
+  }
+  section h1 {
+    margin: -5% 0;
+    text-align: center;
+    width: 100%;
+  }
+  section h2 {
+    font-size: 1.7rem;
+  }
+  section ul h2 {
+    padding-bottom: 2%;
+  }
+  section p:last-of-type {
+    font-size: 1.2rem;
+  }
+  section li {
+    margin-left: 9%;
+  }
+}
+
+@media (max-width: 350px) {
+  article img {
+    height: 8cap;
+  }
+  article {
+    width: 95px;
+    height: 95px;
+  }
+  #transparentBg img {
+    height: 9cap;
+  }
+  header {
+    gap: 5px;
+  }
+  section {
+    margin-bottom: 30%;
+  }
+}

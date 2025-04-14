@@ -1,0 +1,289 @@
+@media (max-width: 1440px) {
+  .header_text_wrapper {
+    width: 50%;
+  }
+  header button {
+    padding: 20px 35px;
+    font-size: 1.6rem;
+  }
+  header img {
+    top: 10%;
+    left: 60%;
+  }
+
+  .calsses {
+    flex-direction: column;
+    gap: 100px;
+  }
+  .classes_text_wrapper {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .classes_text_wrapper button {
+    width: 30%;
+  }
+  .classes_photos {
+    justify-content: center;
+    height: 500px;
+    padding-bottom: 5%;
+  }
+
+  .online-app {
+    flex-direction: column-reverse;
+    gap: 100px;
+  }
+  .onilne_app_text_wrapper {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .br2 {
+    display: none;
+  }
+  .onilne_app_text_wrapper button {
+    width: 30%;
+  }
+  .image_mockup {
+    justify-content: center;
+  }
+
+  .coach {
+    width: 97%;
+  }
+}
+
+/* nwewaytfrvtgybhuniybgtvfcdfvgb */
+
+@media (max-width: 1024px) {
+  header img {
+    display: none;
+  }
+  .header_text_wrapper {
+    width: 95%;
+    text-align: center;
+    padding-left: 0;
+    margin: 0 auto;
+  }
+
+  .classes_photos {
+    height: auto;
+  }
+  article h2 {
+    font-size: 1.3rem;
+  }
+  article img {
+    height: 35cap;
+  }
+
+  .image_mockup img {
+    height: 40cap;
+  }
+
+  .coach {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 70px;
+  }
+
+  .coach_text_wrapper {
+    width: 90%;
+  }
+
+  .coach img,
+  .coach_image_wrapper:after,
+  .coach_image_wrapper::before,
+  .coach_image_wrapper {
+    border-radius: 5%;
+  }
+  .coach_image_wrapper:after {
+    top: -5%;
+  }
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 3.5rem;
+  }
+  header p {
+    font-size: 1.5rem;
+  }
+  header button {
+    font-size: 1.4rem;
+    padding: 20px 25px;
+  }
+
+  .classes_text_wrapper p {
+    font-size: 1.5rem;
+  }
+  .classes_text_wrapper h1 {
+    font-size: 3.5rem;
+  }
+  .classes_text_wrapper button {
+    width: 50%;
+  }
+  article img {
+    height: 25cap;
+  }
+
+  .onilne_app_text_wrapper p {
+    font-size: 1.5rem;
+  }
+  .onilne_app_text_wrapper h1 {
+    font-size: 3.5rem;
+  }
+  .onilne_app_text_wrapper button {
+    width: 50%;
+  }
+  .image_mockup img {
+    height: 30cap;
+  }
+
+  .why-us h1 {
+    font-size: 3.5rem;
+  }
+  .why-us p {
+    font-size: 1.5rem;
+    width: 65%;
+  }
+  .card_wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .coach p,
+  .coach a {
+    font-size: 1.5rem;
+  }
+  .coach h1 {
+    font-size: 3.5rem;
+  }
+  .coach_text_wrapper {
+    padding-bottom: 10%;
+  }
+}
+
+@media (max-width: 550px) {
+  header h1 {
+    font-size: 2.7rem;
+  }
+  header p {
+    font-size: 1.5rem;
+  }
+  header button {
+    font-size: 1.3rem;
+    padding: 15px 25px;
+  }
+  .header_text_wrapper {
+    gap: 70px;
+  }
+
+  .classes_text_wrapper button,
+  .onilne_app_text_wrapper button {
+    width: 65%;
+  }
+
+  .classes_photos {
+    flex-direction: column;
+    align-items: center;
+  }
+  article:nth-child(2) {
+    align-self: center;
+  }
+  article img {
+    height: 50cap;
+  }
+
+  .image_mockup img {
+    height: 20cap;
+  }
+
+  .card_wrapper {
+    gap: 10px;
+  }
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
+    width: 100%;
+  }
+
+  .coach img {
+    height: 30cap;
+  }
+  .coach_image_wrapper::before,
+  .coach_image_wrapper::after {
+    height: 17cap;
+    width: 17cap;
+  }
+}
+
+@media (max-width: 425px) {
+  header h1 {
+    font-size: 3rem;
+  }
+  header button {
+    margin-bottom: 2%;
+    width: 70%;
+  }
+
+  .classes_text_wrapper button,
+  .onilne_app_text_wrapper button {
+    width: 80%;
+  }
+
+  .why-us p {
+    font-size: 1.3rem;
+    width: 90%;
+  }
+
+  .card_wrapper h2 {
+    font-size: 1.5rem;
+  }
+  .card {
+    padding: 20px 10px;
+  }
+  .card4 {
+    margin-bottom: 10%;
+  }
+
+  .coach_text_wrapper {
+    padding-bottom: 25%;
+  }
+}
+
+@media (max-width: 375px) {
+  .classes_photos {
+    gap: 25px;
+  }
+  article img {
+    height: 40cap;
+  }
+
+  .classes_text_wrapper button,
+  .onilne_app_text_wrapper button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .why-us p {
+    padding: 10% 0;
+  }
+
+  .coach img {
+    height: 25cap;
+  }
+  .coach_image_wrapper::before {
+    display: none;
+  }
+  .coach_image_wrapper::after {
+    height: 28cap;
+    width: 28cap;
+    left: 50%;
+  }
+  .coach p {
+    font-size: 1.4rem;
+  }
+  .coach_text_wrapper {
+    padding-bottom: 35%;
+  }
+}

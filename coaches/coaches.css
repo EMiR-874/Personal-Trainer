@@ -1,0 +1,281 @@
+/* ============================================= FONTS ============================================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+/* ====================== MAIN ROOT ====================== */
+
+:root {
+  --fMain: "Exo 2", serif;
+  --fSub: "Oswald", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+/* ====================== HIDDEN ====================== */
+.hidden {
+  display: none;
+}
+
+/* ============================================= HEADER ============================================= */
+article img {
+  border-radius: 50%;
+  height: 15cap;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+article {
+  width: 170px;
+  height: 170px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+article:first-of-type:hover,
+article:nth-child(2):hover,
+article:last-of-type:hover {
+  background-color: transparent;
+}
+
+article:first-of-type {
+  background-color: rgba(127, 240, 89, 1);
+  border-radius: 50%;
+}
+article:nth-child(2) {
+  background-color: rgb(252, 67, 67);
+  border-radius: 50%;
+}
+article:last-of-type {
+  background-color: rgb(62, 144, 252);
+  border-radius: 50%;
+}
+#transparentBg {
+  background-color: transparent;
+  transition: 0.3s ease;
+}
+#transparentBg img {
+  height: 17cap;
+  transition: 0.3s ease;
+}
+
+.header {
+  padding: 5% 0 3%;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 0 auto;
+}
+
+/* ============================================= SECTIONs ============================================= */
+
+section {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+section p:first-of-type {
+  font-family: var(--fSub);
+  font-size: 1.2rem;
+}
+
+section h1 {
+  font-family: var(--fMain);
+  font-size: 3rem;
+  position: relative;
+  width: fit-content;
+}
+
+section p {
+  width: 60%;
+}
+
+section p:nth-child(3) {
+  font-family: var(--fSub);
+  font-size: 1.5rem;
+  font-weight: 350;
+}
+
+section p span {
+  font-weight: bold;
+}
+
+section h2 {
+  font-family: var(--fMain);
+  font-size: 2rem;
+  position: relative;
+}
+
+section li {
+  font-family: var(--fSub);
+  font-size: 1.16rem;
+  margin-left: 3%;
+}
+
+section p:last-of-type {
+  font-family: var(--fSub);
+  font-size: 1.5rem;
+}
+
+section button {
+  font-family: var(--fMain);
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 1.4rem;
+  padding: 25px 50px;
+  width: fit-content;
+}
+
+section {
+  margin-bottom: 7%;
+}
+
+/* GIA VARIABLE */
+.gia p:first-of-type {
+  color: rgba(127, 240, 89, 1);
+}
+
+.gia h2::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -5px;
+  border-left: 3px solid rgba(127, 240, 89, 1);
+  height: 80%;
+}
+
+.gia h1:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  border-bottom: 2px solid rgba(127, 240, 89, 1);
+  border-radius: 50px;
+}
+
+.gia button {
+  background-color: rgba(127, 240, 89, 1);
+  border: 1px solid rgba(127, 240, 89, 1);
+}
+
+.gia button:hover {
+  background-color: rgba(173, 241, 150, 1);
+}
+
+/* --LUCIA VARIABLE */
+.lucia p:first-of-type {
+  color: rgb(252, 67, 67);
+}
+
+.lucia h1:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  border-bottom: 2px solid rgb(252, 67, 67);
+  border-radius: 50px;
+}
+
+.lucia h2::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -5px;
+  border-left: 3px solid rgb(252, 67, 67);
+  height: 80%;
+}
+
+.lucia button {
+  background-color: rgb(252, 67, 67);
+  border: 1px solid rgb(252, 67, 67);
+}
+
+.lucia button:hover {
+  background-color: rgb(253, 105, 105);
+}
+
+/* ----NICOLAS VARIABLE */
+.nicolas p:first-of-type {
+  color: rgb(62, 144, 252);
+}
+
+.nicolas h1:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  border-bottom: 2px solid rgb(62, 144, 252);
+  border-radius: 50px;
+}
+
+.nicolas h2::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -5px;
+  border-left: 3px solid rgb(62, 144, 252);
+  height: 80%;
+}
+
+.nicolas button {
+  background-color: rgb(62, 144, 252);
+  border: 1px solid rgb(62, 144, 252);
+}
+
+.nicolas button:hover {
+  background-color: rgb(109, 170, 250);
+}
+/* ============================================= SECTIONs ANIMATION ============================================= */
+
+section p:first-of-type {
+  animation: fadeIn 0.2s;
+}
+section h1 {
+  animation: fadeIn 0.25s;
+}
+section p:nth-child(3) {
+  animation: fadeIn 0.3s;
+}
+section ul {
+  animation: fadeIn 0.35s;
+}
+section h2:last-of-type {
+  animation: fadeIn 0.4s;
+}
+section p:last-of-type {
+  animation: fadeIn 0.45s;
+}
+section button {
+  animation: fadeIn 0.45s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

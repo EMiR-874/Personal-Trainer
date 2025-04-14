@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gia Giovani - Programs</title>
+    <link rel="stylesheet" href="../main-program.css" />
+    <link rel="stylesheet" href="../main-program-responsive.css" />
+    <link rel="stylesheet" href="../../../../navigation/nav.css" />
+
+    <style>
+      nav .hyperlinks a:nth-child(3):before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: black;
+        border-radius: 50px;
+        left: 0;
+        bottom: -5px;
+      }
+
+      .p1,
+      .p2,
+      .p3 {
+        background-color: black;
+      }
+      .prev {
+        cursor: pointer;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ==================================== NAV ==================================== -->
+
+    <div id="nav-container"></div>
+
+    <!-- ==================================== HEADER ==================================== -->
+    <header>
+      <div class="text_wrapper">
+        <h1>Online Training Plan</h1>
+        <h2><span>Goal:</span> Virtual coaching & personalized workouts for all levels.</h2>
+        <h2><span>Duration:</span> Ongoing (can be customized)</h2>
+        <h2><span>Level:</span> All Levels</h2>
+        <h2>
+          <span>Description:</span>
+          The Online Training Plan is a flexible, fully virtual program that brings personal training directly to your
+          home. Whether you're a beginner or an advanced athlete, this program provides customized workouts and regular
+          check-ins with a certified trainer. You’ll receive detailed workout plans that you can do on your own
+          schedule, with the added benefit of professional guidance and support via video calls, email, or app
+          messaging.
+        </h2>
+        <ul>
+          <h2><span>What’s Included:</span></h2>
+          <li><p>Customized workout plans tailored to your goals</p></li>
+          <li><p>Video check-ins with your personal trainer</p></li>
+          <li><p>Ongoing support via messaging, email, or video calls</p></li>
+          <li><p>Access to virtual group fitness classes and challenges</p></li>
+        </ul>
+        <h2><span>Price:</span> 100$</h2>
+      </div>
+
+      <img src="p5.jpg" alt="" />
+    </header>
+
+    <div class="body_controls">
+      <div class="prev">
+        <div class="prev_icon">
+          <div class="p1"></div>
+          <div class="p2"></div>
+          <div class="p3"></div>
+        </div>
+        <h4>PREV</h4>
+      </div>
+      <div class="center">
+        <div class="center_icon">
+          <div class="c1"></div>
+          <div class="c2"></div>
+          <div class="c3"></div>
+          <div class="c4"></div>
+        </div>
+      </div>
+      <div class="next">
+        <h4>NEXT</h4>
+        <div class="next_icon">
+          <div class="n1"></div>
+          <div class="n2"></div>
+          <div class="n3"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================================== FOOTER ==================================== -->
+    <div id="footer-container"></div>
+
+    <script src="p5.js"></script>
+    <script src="../../../../getNav.js"></script>
+  </body>
+</html>
